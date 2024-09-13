@@ -29,7 +29,21 @@
   color: #fff;
   height: 46px;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
 }
+
+.input {
+  position: relative;
+  background: rgba(0, 0, 0, 0.235);
+  padding: 10px 10px;
+  color: #fff;
+
+  width: 100%;
+  border: none;
+}
+
 
 .copy_btn {
   position: absolute;

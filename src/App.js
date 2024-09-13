@@ -13,6 +13,7 @@ function App() {
   const [includeNumbers, setIncludeNumbers] = useState(false)
   const [includeSymbols, setIncludeSymbols] = useState(false)
 
+
   const handleGeneratePassword = (e) => {
     if (!includeUppercase && !includeLowercase && !includeNumbers && !includeSymbols) {
       notify("You must select atleast one option", true)
@@ -102,7 +103,7 @@ function App() {
         <div className="generator">
           <h1 className="generator_header">Password Generator</h1>
           <div className="generator_password">
-            <h3>{password}</h3>
+            <input className="input" type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button onClick={handleCopyPassword} className="copy_btn">
               <i className="far fa-clipboard"></i>
             </button>
